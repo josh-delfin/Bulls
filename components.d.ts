@@ -7,19 +7,19 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Banner: typeof import('./src/components/Section/Banner.vue')['default']
-    Counter: typeof import('./src/components/Section/Counter.vue')['default']
-    Feature: typeof import('./src/components/Section/Feature.vue')['default']
+    Banner: typeof import('./src/components/ViewSection/Banner.vue')['default']
+    Counter: typeof import('./src/components/ViewSection/Counter.vue')['default']
+    Feature: typeof import('./src/components/ViewSection/Feature.vue')['default']
     Foo: typeof import('./src/components/Footer/Foo.vue')['default']
     Footer: typeof import('./src/components/Footer/Footer.vue')['default']
-    Nav: typeof import('./src/components/Header/Nav.vue')['default']
     Navbar: typeof import('./src/components/Header/Navbar.vue')['default']
-    OpenAccount: typeof import('./src/components/Section/OpenAccount.vue')['default']
-    Portfolio: typeof import('./src/components/Section/Portfolio.vue')['default']
-    Price: typeof import('./src/components/Section/Price.vue')['default']
-    Price1: typeof import('./src/components/Section/Price1.vue')['default']
+    OpenAccount: typeof import('./src/components/ViewSection/OpenAccount.vue')['default']
+    Portfolio: typeof import('./src/components/ViewSection/Portfolio.vue')['default']
+    Price: typeof import('./src/components/ViewSection/Price.vue')['default']
+    Price1: typeof import('./src/components/ViewSection/Price1.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Testimonials: typeof import('./src/components/Section/Testimonials.vue')['default']
+    Scrollup: typeof import('./src/components/ScrollUp/scrollup.vue')['default']
+    Testimonials: typeof import('./src/components/ViewSection/Testimonials.vue')['default']
   }
 }

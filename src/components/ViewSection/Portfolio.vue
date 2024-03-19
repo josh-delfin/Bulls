@@ -31,17 +31,17 @@
           {
             title: "Excellence in Signal Analysis",
             description: "We excel at analyzing signals from multiple providers, ensuring you receive the most accurate and reliable trading opportunities. Our expertise guarantees a safe experience, even for beginners.",
-            image: "/img/f-item-1.png"
+            image: "/public/img/f-item-1.png"
           },
           {
             title: "Diverse Trading Opportunities",
             description: "Explore the world of trading with us, whether it's crypto, stocks, forex, or more. Our expertly crafted insights into indicators, charts, and strategies will guide you on an exciting trading journey.",
-            image: "/img/f-item-2.png"
+            image: "/public/img/f-item-2.png"
           },
           {
             title: "Join Our Supportive Community",
             description: "Join our ever-growing community of traders and benefit from our exceptional signal service. Becoming a member is as simple as 2 clicks, empowering you with collective knowledge for informed trading decisions.",
-            image: "/img/f-item-3.png"
+            image: "/public/img/f-item-3.png"
           }
         ]
       };
@@ -53,11 +53,11 @@
   .section-head {
       padding-bottom: 50px;
       padding-top: -10;
-      width: 90%;
+      width: 80%;
       border-radius: 15px;
-      margin: 0 auto; /* Center horizontally */
-      position: relative; /* Add position relative */
-      z-index: 1; /* Add higher z-index */
+      margin: 0 auto; 
+      position: relative; 
+      z-index: 1; 
   }
   
   .portfolio {
@@ -72,7 +72,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 75%;
+    width: 65%;
     height: 75%;
     content: "";
     background: #dfe7fb;

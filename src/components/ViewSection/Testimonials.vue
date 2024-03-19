@@ -1,41 +1,42 @@
 <template>
-    <v-container>
-      <v-row>
-        <v-col cols="12">
-          <v-carousel cycle hide-delimiters prev-icon="mdi-chevron-left" next-icon="mdi-chevron-right" prev-icon-color="#66cc33" next-icon-color="#66cc33" >
-            <v-carousel-item v-for="(testimonial, index) in testimonials" :key="index">
-              <v-row align="center">
-                <v-col cols="12" md="5">
-                  <div class="thumb"></div>
-                </v-col>
-                <v-col cols="12" md="7" style="position: relative;">
-                  <div class="gradient-box" style="margin-top:20px;margin-left:-70%;width:100%;background: linear-gradient(60deg, #d596f6 0%, #a09df8 60%, #6ba4f9 100%); padding: 20px; border-radius: 10px; color: white; height: 325px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
-    <!-- Your content goes here -->
-    <p>This is a gradient box.</p>
-</div>
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <v-carousel cycle hide-delimiters prev-icon="mdi-chevron-left" next-icon="mdi-chevron-right"
+          prev-icon-color="#66cc33" next-icon-color="#66cc33" style="border-radius: none;">
+          <v-carousel-item v-for="(testimonial, index) in testimonials" :key="index">
+            <v-row align="center">
+              <v-col cols="12" md="5">
+                <div class="thumb"></div>
+              </v-col>
+              <v-col cols="12" md="7" style="position: relative;">
+                <div class="gradient-box"
+                  style="margin-top:20px;margin-left:-70%;width:100%;background: linear-gradient(60deg, #d596f6 0%, #a09df8 60%, #6ba4f9 100%); padding: 20px; border-radius: 10px; color: white; height: 325px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;">
+                </div>
 
-        <div class="content" style="height: 300px; margin: 10px 20px; position: relative; z-index: 1; margin-top: 5%;">
-            <div class="star">
-                <v-icon v-for="star in 5" :key="star" color="yellow">mdi-star</v-icon>
-            </div>
-            <h3 class="subtitle">{{ testimonial.name }} - {{ testimonial.title }}</h3>
-            <p class="text">{{ testimonial.message }}</p>
-        </div>
-    </v-col>
-              </v-row>
-            </v-carousel-item>
-          </v-carousel>
-        </v-col>
-      </v-row>
-    </v-container>
-  </template>
-  
-  
-  <script>
-  export default {
-    data() {
-      return {
-        testimonials: [
+                <div class="content"
+                  style="height: 300px; margin: 10px 20px; position: relative; z-index: 1; margin-top: 5%;">
+                  <div class="star">
+                    <v-icon v-for="star in 5" :key="star" color="#fd7e14">mdi-star</v-icon>
+                  </div>
+                  <h3 class="subtitle">{{ testimonial.name }} - {{ testimonial.title }}</h3>
+                  <p class="text">{{ testimonial.message }}</p>
+                </div>
+              </v-col>
+            </v-row>
+          </v-carousel-item>
+        </v-carousel>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+
+<script>
+export default {
+  data() {
+    return {
+      testimonials: [
         {
           name: "Jane Lowe",
           title: "Trading Enthusiast",
@@ -111,37 +112,36 @@
           title: "Exceptional Support",
           message: `"Beyond the accurate signals, Bull Signal has a stellar support team. They've promptly addressed my inquiries and gone above and beyond to ensure I have a smooth experience."`,
         },
-        ]
-      };
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .content {
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 1.414px 1.414px 38px 0px rgba(173, 173, 229, 0.6);
-    padding: 60px 40px 60px;
+      ]
+    };
   }
-  
-  .star {
+};
+</script>
+
+<style scoped>
+.content {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1.414px 1.414px 38px 0px rgba(173, 173, 229, 0.6);
+  padding: 60px 40px 60px;
+}
+
+.star {
   color: #fd7e14;
 }
 
-  
-  .subtitle {
-    padding: 18px 0px 14px;
-    color: #66cc33;
-  }
-  
-  .text {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-  }
-  
-  .v-carousel .v-btn {
+.subtitle {
+  padding: 18px 0px 14px;
+  color: #66cc33;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.v-carousel .v-btn {
   background-color: #66cc33;
 }
 
@@ -155,10 +155,14 @@
 
 .v-carousel .v-btn--prev {
   left: 20px;
+  border: none;
+  /* Remove the border */
 }
 
 .v-carousel .v-btn--next {
   right: 20px;
+  border: none;
+  /* Remove the border */
 }
 
 .v-carousel .v-btn--prev i,
@@ -170,6 +174,4 @@
 .v-carousel .v-btn--next:hover i {
   color: #ffffff;
 }
-
-  </style>
-  
+</style>
